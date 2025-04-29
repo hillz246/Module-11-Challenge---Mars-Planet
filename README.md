@@ -1,19 +1,82 @@
-# Module-11-Challenge---Mars-Planet
-Assignment 11 Mars Planet
+# Mars Planet Mission – Data Engineering Challenge 🚀
 
-****Web scraping and Data analysis****
+This project showcases a data engineering pipeline using web scraping and MongoDB to gather and display up-to-date information about Mars.
 
-Deliverable 1: Scrape titles and preview text from Mars news articles.
+## 📌 Project Objective
+To develop a fully functional Flask application that:
+- Scrapes the latest Mars news and images from multiple sources
+- Stores the data in a MongoDB database
+- Displays the scraped content dynamically through an HTML dashboard
 
-***Structure***
-* Mars news site: https://static.bc-edx.com/data/web/mars_news/index.html
+## 🛠️ Tools & Technologies
+- **Python** – Scripting and automation  
+- **BeautifulSoup & Splinter** – Web scraping tools  
+- **Pandas** – Data manipulation and transformation  
+- **Flask** – Web framework for building the front-end interface  
+- **MongoDB** – NoSQL database to store and retrieve scraped content  
+- **HTML/CSS** – Front-end layout and design
 
-+ worked on Jupyter Notebook named part_1_mars_news.ipynb.
-+ extracted text elements from the website
-+ stored scraped data in a JSON file.
+## 📊 Features
+- Scrapes NASA Mars news titles and paragraphs  
+- Retrieves Mars facts and formats them as an HTML table  
+- Collects Mars hemisphere images and titles  
+- Stores all data into a MongoDB database  
+- Serves the data via a Flask-powered web page
 
-Deliverable 2: Scrape and analyze Mars weather data, which exists in a table.
+## 🚀 How to Run Locally
 
-* Mars weather data: used saved mars_news.json file from deliverable 1.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/hillz246/Module-11-Challenge---Mars-Planet.git
+cd Module-11-Challenge---Mars-Planet
+```
 
-  + Assembled the scraped data into a Pandas DataFrame. Analyzed the dataset by using Pandas functions. 
+### 2. Create a Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Scraper
+```bash
+python scrape_mars.py
+```
+
+### 5. Launch the Flask App
+```bash
+flask run
+```
+
+### 6. View in Browser
+Open your browser and go to:
+```
+http://localhost:5000
+```
+
+## 📁 Project Structure
+```
+├── app.py                  # Main Flask application  
+├── scrape_mars.py          # Web scraping logic  
+├── templates/              
+│   └── index.html          # Web interface template  
+├── static/                 # CSS or image files (if any)  
+├── requirements.txt        # Python dependencies  
+└── README.md               # Project documentation
+```
+
+## 🧠 What I Learned
+- Built an ETL pipeline using Python, BeautifulSoup, and MongoDB  
+- Connected a dynamic backend to a Flask-based front-end  
+- Strengthened full-stack Python development and web scraping skills
+
+## 📬 Contact
+**Prachi Patel**  
+[LinkedIn](https://www.linkedin.com/in/prachi-patel-030b2897/)  
+*Open to roles in Data Analytics | Healthcare Analytics | Business Intelligence*
+
+
